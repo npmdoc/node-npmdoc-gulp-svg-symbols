@@ -1,0 +1,825 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/Hiswe/gulp-svg-symbols">gulp-svg-symbols (v2.0.2)</a>
+</h1>
+<h4>Convert SVG files to symbols with gulp</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-symbols">module gulp-svg-symbols</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.gulp-svg-symbols">
+            function <span class="apidocSignatureSpan"></span>gulp-svg-symbols
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.</span>default_config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.</span>svg</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.</span>templates</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-symbols.default_config">module gulp-svg-symbols.default_config</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>svgClassname</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>title</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>warn</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.default_config.transformData">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>transformData
+            <span class="apidocSignatureSpan">(svg, defaultData, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>fontSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>slug</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>templates</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>className</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>id</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-symbols.svg">module gulp-svg-symbols.svg</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.svg.formatForTemplate">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.svg.</span>formatForTemplate
+            <span class="apidocSignatureSpan">(svgRawData, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.svg.parseFile">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.svg.</span>parseFile
+            <span class="apidocSignatureSpan">(file, options, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-symbols.templates">module gulp-svg-symbols.templates</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.templates.render">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.templates.</span>render
+            <span class="apidocSignatureSpan">(_arg0, _arg1, _arg2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.templates.renderAll">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.templates.</span>renderAll
+            <span class="apidocSignatureSpan">(templates, datas)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-symbols.utils">module gulp-svg-symbols.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.utils.createFile">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>createFile
+            <span class="apidocSignatureSpan">(name, contents)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.utils.cssSize">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>cssSize
+            <span class="apidocSignatureSpan">(size, fontSize)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.utils.dynamicText">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>dynamicText
+            <span class="apidocSignatureSpan">(template, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.utils.sizeOrViewboxFallback">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>sizeOrViewboxFallback
+            <span class="apidocSignatureSpan">(size, fallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-symbols.utils.viewboxToArray">
+            function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>viewboxToArray
+            <span class="apidocSignatureSpan">(viewbox, name, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-symbols" id="apidoc.module.gulp-svg-symbols">module gulp-svg-symbols</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.gulp-svg-symbols" id="apidoc.element.gulp-svg-symbols.gulp-svg-symbols">
+        function <span class="apidocSignatureSpan"></span>gulp-svg-symbols
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gulpSvgSymbols(opts) {
+  opts = opts || {};
+  var buffer  = [];
+  var defs    = [];
+
+  // clone everything as we don't want to mutate anything
+  var options = _.defaults(_.cloneDeep(opts), _.cloneDeep(defaults));
+
+  // expand path to default templates
+  options.templates = options.templates.map(function (pathName) {
+    if (pathName in templatesPath) return templatesPath[pathName];
+    return pathName;
+  });
+
+  // buffer and transform every files
+  return through.obj(function transform(file, encoding, cb) {
+
+    if (file.isNull()) {
+      return cb(null, file);
+    }
+
+    // we don't handle streams :,(
+    // use https://github.com/nfroidure/gulp-streamify if you're reading this
+    // next versions should use https://www.npmjs.com/package/bufferstreams
+    if (file.isStream()) {
+      this.emit('error', new GulpError(PLUGIN_NAME, 'Streaming not supported'));
+      return cb();
+    }
+
+    svg.parseFile(file, options, function (result) {
+      buffer.push(result);
+      return cb(null);
+    });
+
+  // put all generated files back in the stream
+  }, function flush(cb) {
+    var that = this;
+
+    var svgData = buffer.map(function (svgRawData) {
+      // defs are not at an SVG level
+      // they should be handled globally to the new SVG file
+      if (svgRawData.defs) defs.push(svgRawData.defs);
+      delete svgRawData.defs;
+      //
+      return svg.formatForTemplate(svgRawData, options);
+    });
+    // force defs to have a value.
+    // better for templates to check if `false` rather than lengthâ€¦
+    defs = defs.length &gt; 0 ? defs.join('\n') : false;
+
+    var files = templates.renderAll(options.templates, {
+      svgClassname: options.svgClassname,
+      icons: svgData,
+      defs: defs,
+    });
+
+    function outputFiles(files) {
+      files.forEach(function (file) {
+        that.push(file);
+      });
+      cb();
+    }
+
+    BPromise.all(files).then(outputFiles);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-symbols.default_config" id="apidoc.module.gulp-svg-symbols.default_config">module gulp-svg-symbols.default_config</a></h1>
+
+
+
+
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.default_config.transformData" id="apidoc.element.gulp-svg-symbols.default_config.transformData">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.default_config.</span>transformData
+        <span class="apidocSignatureSpan">(svg, defaultData, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transformData = function (svg, defaultData, options) {
+  return defaultData;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Styles coming from &lt;style /&gt; are kept in the SVG file
+// we don't take care of duplicated styles or anything else
+if (svgRawData.style) tmplDatas.style = svgRawData.style;
+
+// Apply TransformData option
+// no need to be able to call transformData inside transformData %)
+result      = options.<span class="apidocCodeKeywordSpan">transformData</span>(svgRawData, tmplDatas, _.omit(options, [
+  'transformData',
+  'templates'
+]));
+// Always keep a reference of the original datas
+result.svg  = svgRawData;
+
+return result;
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-symbols.svg" id="apidoc.module.gulp-svg-symbols.svg">module gulp-svg-symbols.svg</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.svg.formatForTemplate" id="apidoc.element.gulp-svg-symbols.svg.formatForTemplate">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.svg.</span>formatForTemplate
+        <span class="apidocSignatureSpan">(svgRawData, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function formatForTemplate(svgRawData, options) {
+  var result        = {};
+  // this can be overrided by user transformData function
+  var tmplDatas     = {
+    id:         utils.dynamicText(options.id, svgRawData.id),
+    className:  utils.dynamicText(options.className, svgRawData.id),
+    width:      utils.cssSize(svgRawData.width, options.fontSize),
+    height:     utils.cssSize(svgRawData.height, options.fontSize),
+  };
+  // It should be handled by a custom template or custom transformData
+  if (options.title !== false &amp;&amp; !/&lt;title&gt;/.test(svgRawData.content)) {
+    tmplDatas.title = utils.dynamicText(options.title, svgRawData.name);
+  }
+
+  // Styles coming from &lt;style /&gt; are kept in the SVG file
+  // we don't take care of duplicated styles or anything else
+  if (svgRawData.style) tmplDatas.style = svgRawData.style;
+
+  // Apply TransformData option
+  // no need to be able to call transformData inside transformData %)
+  result      = options.transformData(svgRawData, tmplDatas, _.omit(options, [
+    'transformData',
+    'templates'
+  ]));
+  // Always keep a reference of the original datas
+  result.svg  = svgRawData;
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var svgData = buffer.map(function (svgRawData) {
+  // defs are not at an SVG level
+  // they should be handled globally to the new SVG file
+  if (svgRawData.defs) defs.push(svgRawData.defs);
+  delete svgRawData.defs;
+  //
+  return svg.<span class="apidocCodeKeywordSpan">formatForTemplate</span>(svgRawData, options);
+});
+// force defs to have a value.
+// better for templates to check if `false` rather than lengthâ€¦
+defs = defs.length &gt; 0 ? defs.join('\n') : false;
+
+var files = templates.renderAll(options.templates, {
+  svgClassname: options.svgClassname,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.svg.parseFile" id="apidoc.element.gulp-svg-symbols.svg.parseFile">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.svg.</span>parseFile
+        <span class="apidocSignatureSpan">(file, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parseFile(file, options, callback) {
+  var $       = cheerio.load(file.contents.toString(), {
+    normalizeWhitespace: true,
+    xmlMode: true
+  });
+  var $svg    = $('svg');
+  var attr    = $svg[0].attribs;
+  var viewBox = utils.viewboxToArray(attr.viewBox, file.path, options);
+  var name    = /(.*)\.svg/.exec(path.basename(file.path))[1];
+
+  var result  = {
+    name:               name,
+    viewBox:            viewBox.join(' '),
+    originalAttributes: attr,
+    // SVG files might not have size
+    // https://github.com/Hiswe/gulp-svg-symbols/issues/10
+    width:    utils.sizeOrViewboxFallback(attr.width, viewBox[2]),
+    height:   utils.sizeOrViewboxFallback(attr.height, viewBox[3]),
+  };
+
+  // ID generation
+  // spaces in IDs or Classes are never a good idea
+  if (_.isFunction(options.slug)) {
+    // let user add his custom parsing functionâ€¦
+    result.id = options.slug(name);
+  } else if (_.isPlainObject(options.slug)) {
+    // â€¦or pass custom option to speakingurl
+    result.id = slug(name, options.slug);
+  } else {
+    result.id = slug(name);
+  }
+
+  // STYLE handling
+  var $style      = $svg.find('style');
+  if ($style.length) {
+    result.style  = $style.html().trim();
+    // don't format more than adding newlines after each rules end
+    result.style  = result.style.replace(/}\s*(?!\n)/g, '}\n');
+  }
+  $style.remove();
+
+  // DEFS handling
+  var $defs      = $svg.find('defs');
+  if ($defs.children().length) {
+    result.defs  = $defs.html();
+  }
+  $defs.remove();
+
+  // CONTENT
+  // only optim is to remove empty group
+  // but shouldn't be done: SVG Symbol should only do concat SVG files
+  $svg.find('g').each(function () {
+    if (!$(this).children().length) $(this).remove();
+  });
+
+  result.content = $svg.html();
+
+  return callback(result);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // use https://github.com/nfroidure/gulp-streamify if you're reading this
+  // next versions should use https://www.npmjs.com/package/bufferstreams
+  if (file.isStream()) {
+    this.emit('error', new GulpError(PLUGIN_NAME, 'Streaming not supported'));
+    return cb();
+  }
+
+  svg.<span class="apidocCodeKeywordSpan">parseFile</span>(file, options, function (result) {
+    buffer.push(result);
+    return cb(null);
+  });
+
+// put all generated files back in the stream
+}, function flush(cb) {
+  var that = this;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-symbols.templates" id="apidoc.module.gulp-svg-symbols.templates">module gulp-svg-symbols.templates</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.templates.render" id="apidoc.element.gulp-svg-symbols.templates.render">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.templates.</span>render
+        <span class="apidocSignatureSpan">(_arg0, _arg1, _arg2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (_arg0, _arg1, _arg2) {
+    'use strict';
+    var len = arguments.length;
+    var promise = new Promise(INTERNAL);
+    promise._captureStackTrace();
+    var nodeback = nodebackForPromise(promise, false);
+    var ret;
+    var callback = tryCatch(fn);
+    switch(len) {
+        case 2:ret = callback.call(this, _arg0, _arg1, nodeback); break;
+case 1:ret = callback.call(this, _arg0, nodeback); break;
+case 0:ret = callback.call(this, nodeback); break;
+case 3:ret = callback.call(this, _arg0, _arg1, _arg2, nodeback); break;
+
+default:
+    var args = new Array(len + 1);
+    var i = 0;
+    for (var i = 0; i &lt; len; ++i) {
+       args[i] = arguments[i];
+    }
+    args[i] = nodeback;
+    ret = callback.apply(this, args);
+
+    break;
+
+    }
+    if (ret === errorObj) {
+        promise._rejectCallback(maybeWrapAsError(ret.e), true, true);
+    }
+    if (!promise._isFateSealed()) promise._setAsyncGuaranteed();
+    return promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.templates.renderAll" id="apidoc.element.gulp-svg-symbols.templates.renderAll">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.templates.</span>renderAll
+        <span class="apidocSignatureSpan">(templates, datas)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderAll(templates, datas) {
+  return templates.map(function (template) {
+    return render(template, datas);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  //
+  return svg.formatForTemplate(svgRawData, options);
+});
+// force defs to have a value.
+// better for templates to check if `false` rather than lengthâ€¦
+defs = defs.length &gt; 0 ? defs.join('\n') : false;
+
+var files = templates.<span class="apidocCodeKeywordSpan">renderAll</span>(options.templates, {
+  svgClassname: options.svgClassname,
+  icons: svgData,
+  defs: defs,
+});
+
+function outputFiles(files) {
+  files.forEach(function (file) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-symbols.utils" id="apidoc.module.gulp-svg-symbols.utils">module gulp-svg-symbols.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.utils.createFile" id="apidoc.element.gulp-svg-symbols.utils.createFile">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>createFile
+        <span class="apidocSignatureSpan">(name, contents)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createFile(name, contents) {
+  return new File({
+    cwd:  './',
+    base: './',
+    path: name,
+    contents: new Buffer(contents)
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var BPromise                = require('bluebird');
+var utils                   = require('./utils');
+
+var render = function render(template, datas, callback) {
+var name = path.basename(template);
+var svgContent = tmpl(template, datas, function (err, result) {
+  if (err) return callback(err, result);
+  callback(null, utils.<span class="apidocCodeKeywordSpan">createFile</span>(name, result));
+});
+};
+
+render = BPromise.promisify(render);
+
+function renderAll(templates, datas) {
+return templates.map(function (template) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.utils.cssSize" id="apidoc.element.gulp-svg-symbols.utils.cssSize">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>cssSize
+        <span class="apidocSignatureSpan">(size, fontSize)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cssSize(size, fontSize) {
+  var unit = 'px';
+  if (_.isNumber(fontSize) &amp;&amp; fontSize &gt; 0) {
+    unit = 'em';
+  }
+  if (unit === 'px') {
+    return size + 'px';
+  }
+  return _.round(size / fontSize, 3) + 'em';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function formatForTemplate(svgRawData, options) {
+var result        = {};
+// this can be overrided by user transformData function
+var tmplDatas     = {
+  id:         utils.dynamicText(options.id, svgRawData.id),
+  className:  utils.dynamicText(options.className, svgRawData.id),
+  width:      utils.<span class="apidocCodeKeywordSpan">cssSize</span>(svgRawData.width, options.fontSize),
+  height:     utils.cssSize(svgRawData.height, options.fontSize),
+};
+// It should be handled by a custom template or custom transformData
+if (options.title !== false &amp;&amp; !/&lt;title&gt;/.test(svgRawData.content)) {
+  tmplDatas.title = utils.dynamicText(options.title, svgRawData.name);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.utils.dynamicText" id="apidoc.element.gulp-svg-symbols.utils.dynamicText">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>dynamicText
+        <span class="apidocSignatureSpan">(template, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function dynamicText(template, name) {
+  return template.replace('%f', name);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// MODIFY DATAS BEFORE GIVING IT TO TEMPLATES
+//
+
+function formatForTemplate(svgRawData, options) {
+var result        = {};
+// this can be overrided by user transformData function
+var tmplDatas     = {
+  id:         utils.<span class="apidocCodeKeywordSpan">dynamicText</span>(options.id, svgRawData.id),
+  className:  utils.dynamicText(options.className, svgRawData.id),
+  width:      utils.cssSize(svgRawData.width, options.fontSize),
+  height:     utils.cssSize(svgRawData.height, options.fontSize),
+};
+// It should be handled by a custom template or custom transformData
+if (options.title !== false &amp;&amp; !/&lt;title&gt;/.test(svgRawData.content)) {
+  tmplDatas.title = utils.dynamicText(options.title, svgRawData.name);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.utils.sizeOrViewboxFallback" id="apidoc.element.gulp-svg-symbols.utils.sizeOrViewboxFallback">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>sizeOrViewboxFallback
+        <span class="apidocSignatureSpan">(size, fallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sizeOrViewboxFallback(size, fallback) {
+  // no size -&gt; get viewbox fallback
+  if (_.isUndefined(size)) {
+    return fallback;
+  }
+  // handle percent svg size -&gt; get viewbox fallback
+  // https://github.com/Hiswe/gulp-svg-symbols/issues/24
+  if (/\d+%/.test(size)) {
+    return (parseInt(size, 10) * fallback) / 100;
+  }
+  return parseInt(size, 10);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var result  = {
+  name:               name,
+  viewBox:            viewBox.join(' '),
+  originalAttributes: attr,
+  // SVG files might not have size
+  // https://github.com/Hiswe/gulp-svg-symbols/issues/10
+  width:    utils.<span class="apidocCodeKeywordSpan">sizeOrViewboxFallback</span>(attr.width, viewBox[2]),
+  height:   utils.sizeOrViewboxFallback(attr.height, viewBox[3]),
+};
+
+// ID generation
+// spaces in IDs or Classes are never a good idea
+if (_.isFunction(options.slug)) {
+  // let user add his custom parsing functionâ€¦
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-symbols.utils.viewboxToArray" id="apidoc.element.gulp-svg-symbols.utils.viewboxToArray">
+        function <span class="apidocSignatureSpan">gulp-svg-symbols.utils.</span>viewboxToArray
+        <span class="apidocSignatureSpan">(viewbox, name, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function viewboxToArray(viewbox, name, options) {
+  if (_.isUndefined(viewbox)) {
+    if (options.warn) {
+      gutil.log(warn(PLUGIN_NAME), grey('viewbox missing in file'), name);
+    }
+    return [0, 0, 100, 100];
+  }
+
+  return viewbox.split(' ').map(function (value) {
+    return parseFloat(value, 10);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function parseFile(file, options, callback) {
+var $       = cheerio.load(file.contents.toString(), {
+  normalizeWhitespace: true,
+  xmlMode: true
+});
+var $svg    = $('svg');
+var attr    = $svg[0].attribs;
+var viewBox = utils.<span class="apidocCodeKeywordSpan">viewboxToArray</span>(attr.viewBox, file.path, options);
+var name    = /(.*)\.svg/.exec(path.basename(file.path))[1];
+
+var result  = {
+  name:               name,
+  viewBox:            viewBox.join(' '),
+  originalAttributes: attr,
+  // SVG files might not have size
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
